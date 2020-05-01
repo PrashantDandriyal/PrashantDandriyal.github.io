@@ -24,7 +24,6 @@ $ ./setup.sh
 ```
 With a long log, you shall see something like 
 ```
-
 Multiple filesystems found.
         1:tisdk-rootfs-image-am57xx-evm.tar.xz
         2:tisdk-docker-rootfs-image-am57xx-evm.tar.xz
