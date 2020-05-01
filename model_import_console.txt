@@ -1,0 +1,333 @@
+pradan@pradan-HP-15-Notebook-PC:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81$ source linux-devkit/environment-setup
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tensorflow/popo_tidl_import_yolo_v2_tiny_coco.txt
+Could not open config  file : ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tensorflow/popo_tidl_import_yolo_v2_tiny_coco.txt  
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v2_tiny_coco.txt
+Couldn't open inputNetFile file: ~/Converted-YOLO-Models/yolo-v2-tiny-coco.tflite  
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v2_tiny_coco.txt
+Couldn't open inputNetFile file: home/pradan/Converted-YOLO-Models/yolo-v2-tiny-coco.tflite  
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v2_tiny_coco.txt
+Couldn't open inputNetFile file: inux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/yolo-v2-tiny-coco.tflite  
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v2_tiny_coco.txt
+
+=============================== TIDL import - parsing ===============================
+
+TFLite Model (Flatbuf) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/yolo-v2-tiny-coco.tflite  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_bin_yolo-v2-tiny-coco-tflite.bin  
+TIDL IO Info File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_param_yolo-v2-tiny-coco-tflite.bin  
+TFLite node size: 39
+ TFlite operator MAXIMUM is not suported now..  By passing
+Segmentation fault (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v2_tiny_coco.txt
+
+=============================== TIDL import - parsing ===============================
+
+TFLite Model (Flatbuf) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/quantized-yolo-v2-tiny-coco.tflite  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_bin_yolo-v2-tiny-coco-tflite.bin  
+TIDL IO Info File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_param_yolo-v2-tiny-coco-tflite.bin  
+TFLite node size: 39
+
+Only float and DT_INT32 tensor is suported 
+TIDL limitation: TFLite operator CONV_2D cannot be mapped to a TIDL layer.
+ TFlite operator MAXIMUM is not suported now..  By passing
+Segmentation fault (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tensorflow/popo_tidl_import_mobileNetv1.txt
+
+=============================== TIDL import - parsing ===============================
+
+TF Model (Proto) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/DW2TF-yolo-v2-tiny-coco.pb  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/DW2TF_tidl_bin_yolo-v2-tiny-coco.bin  
+TIDL Params File       : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/DW2TF_tidl_param_yolo-v2-tiny-coco.bin  
+
+TIDL limitation: TensorFlow operator RandomUniform is not suported.
+TIDL limitation: TensorFlow operator Sub is not suported.
+TIDL limitation: TensorFlow operator VariableV2 is not suported.
+[libprotobuf FATAL /oe/bld/build-CORTEX_1/arago-tmp-external-arm-toolchain/work/x86_64-nativesdk-arago-linux/nativesdk-tidl-import/01.01.03.00-r0/recipe-sysroot-native/usr/include/google/protobuf/repeated_field.h:1506] CHECK failed: (index) < (current_size_): 
+terminate called after throwing an instance of 'google::protobuf::FatalException'
+  what():  CHECK failed: (index) < (current_size_): 
+Aborted (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/onnx/popo_tidl_import_yolov3tiny.txt
+
+=============================== TIDL import - parsing ===============================
+
+ONNX Model (Proto) File: linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/onnx/zldrobit_yolo_v3_tiny.onnx  
+TIDL Network File      : linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/onnx/tidl_net_zldrobit_yolo_v3_tiny  
+TIDL Params  File      : linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/onnx/tidl_param_zldrobit_yolo_v3_tiny  
+
+TIDL limitation: Padding only supported in H and W axis 
+TIDL limitation: ONNX operator LeakyRelu is not suported.
+TIDL limitation: Padding only supported in H and W axis 
+TIDL limitation: ONNX operator LeakyRelu is not suported.
+TIDL limitation: Padding only supported in H and W axis 
+TIDL limitation: ONNX operator LeakyRelu is not suported.
+TIDL limitation: Padding only supported in H and W axis 
+TIDL limitation: ONNX operator LeakyRelu is not suported.
+TIDL limitation: Padding only supported in H and W axis 
+TIDL limitation: ONNX operator LeakyRelu is not suported.
+TIDL limitation: Padding only supported in H and W axis 
+TIDL limitation: ONNX operator LeakyRelu is not suported.
+TIDL limitation: ONNX operator Pad is not suported.
+TIDL limitation: Padding only supported in H and W axis 
+TIDL limitation: ONNX operator LeakyRelu is not suported.
+TIDL limitation: ONNX operator LeakyRelu is not suported.
+TIDL limitation: Padding only supported in H and W axis 
+TIDL limitation: ONNX operator LeakyRelu is not suported.
+TIDL limitation: Only float and INT64 tensor is suported.
+TIDL limitation: ONNX operator Reshape cannot be mapped to a TIDL layer.
+TIDL limitation: Only float and INT64 tensor is suported.
+TIDL limitation: ONNX operator Reshape cannot be mapped to a TIDL layer.
+TIDL limitation: ONNX operator Slice is not suported.
+TIDL limitation: ONNX operator Sigmoid is not suported.
+TIDL limitation: ONNX operator Mul is not suported.
+TIDL limitation: ONNX operator Slice is not suported.
+TIDL limitation: ONNX operator Exp is not suported.
+TIDL limitation: ONNX operator Mul is not suported.
+TIDL limitation: ONNX operator Mul is not suported.
+TIDL limitation: ONNX operator Slice is not suported.
+TIDL limitation: ONNX operator Sigmoid is not suported.
+TIDL limitation: ONNX operator Slice is not suported.
+TIDL limitation: ONNX operator Sigmoid is not suported.
+TIDL limitation: Concat is only supported accross channels
+TIDL limitation: ONNX operator Concat cannot be mapped to a TIDL layer.
+TIDL limitation: Only float and INT64 tensor is suported.
+TIDL limitation: ONNX operator Reshape cannot be mapped to a TIDL layer.
+TIDL limitation: Only float and INT64 tensor is suported.
+TIDL limitation: ONNX operator Reshape cannot be mapped to a TIDL layer.
+TIDL limitation: ONNX operator LeakyRelu is not suported.
+TIDL limitation: ONNX operator Shape is not suported.
+TIDL limitation: ONNX operator Gather is not suported.
+TIDL limitation: ONNX operator Cast is not suported.
+TIDL limitation: ONNX operator Mul is not suported.
+TIDL limitation: ONNX operator Cast is not suported.
+TIDL limitation: ONNX operator Floor is not suported.
+TIDL limitation: ONNX operator Shape is not suported.
+TIDL limitation: ONNX operator Gather is not suported.
+TIDL limitation: ONNX operator Cast is not suported.
+TIDL limitation: ONNX operator Mul is not suported.
+TIDL limitation: ONNX operator Cast is not suported.
+TIDL limitation: ONNX operator Floor is not suported.
+TIDL limitation: ONNX operator Unsqueeze is not suported.
+TIDL limitation: ONNX operator Unsqueeze is not suported.
+TIDL limitation: Concat is only supported accross channels
+TIDL limitation: ONNX operator Concat cannot be mapped to a TIDL layer.
+TIDL limitation: ONNX operator Cast is not suported.
+TIDL limitation: ONNX operator Shape is not suported.
+TIDL limitation: ONNX operator Slice is not suported.
+TIDL limitation: ONNX operator Cast is not suported.
+TIDL limitation: ONNX operator Div is not suported.
+TIDL limitation: Concat is only supported accross channels
+TIDL limitation: ONNX operator Concat cannot be mapped to a TIDL layer.
+TIDL limitation: ONNX operator Upsample is not suported.
+TIDL limitation: Padding only supported in H and W axis 
+TIDL limitation: ONNX operator LeakyRelu is not suported.
+TIDL limitation: Only float and INT64 tensor is suported.
+TIDL limitation: ONNX operator Reshape cannot be mapped to a TIDL layer.
+TIDL limitation: Only float and INT64 tensor is suported.
+TIDL limitation: ONNX operator Reshape cannot be mapped to a TIDL layer.
+TIDL limitation: ONNX operator Slice is not suported.
+TIDL limitation: ONNX operator Sigmoid is not suported.
+TIDL limitation: ONNX operator Mul is not suported.
+TIDL limitation: ONNX operator Slice is not suported.
+TIDL limitation: ONNX operator Exp is not suported.
+TIDL limitation: ONNX operator Mul is not suported.
+TIDL limitation: ONNX operator Mul is not suported.
+TIDL limitation: ONNX operator Slice is not suported.
+TIDL limitation: ONNX operator Sigmoid is not suported.
+TIDL limitation: ONNX operator Slice is not suported.
+TIDL limitation: ONNX operator Sigmoid is not suported.
+TIDL limitation: Concat is only supported accross channels
+TIDL limitation: ONNX operator Concat cannot be mapped to a TIDL layer.
+TIDL limitation: Only float and INT64 tensor is suported.
+TIDL limitation: ONNX operator Reshape cannot be mapped to a TIDL layer.
+TIDL limitation: Only float and INT64 tensor is suported.
+TIDL limitation: ONNX operator Reshape cannot be mapped to a TIDL layer.
+
+Import error: This ONNX model has unsupported operators. Please check TIDL User's Guide for supported operators.
+Error in sorting layers: matching layer cannot be found!
+
+Import error: This ONNX model's topology is not supported. Please check TIDL User's Guide for supported network topologies.
+TIDL limitation: Reshape layer cannot be merged with layers other than InnerProduct or AveragePooling layer!
+
+Import error: Reshape layer cannot be merged.
+
+Num of Layer Detected :  84 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Num|TIDL Layer Name               |Out Data Name                                     |Group |#Ins  |#Outs |Inbuf Ids                       |Outbuf Id |In NCHW                             |Out NCHW                            |MACS       |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0|TIDL_DataLayer                |input.1                                           |     0|    -1|     1|  x   x   x   x   x   x   x   x |  0       |       0        0        0        0 |       1        3      416      416 |         0 |
+    1|TIDL_DataLayer                |154                                               |     0|    -1|     1|  x   x   x   x   x   x   x   x |  1       |       0        0        0        0 |       1        3      416      416 |         0 |
+    2|TIDL_ConvolutionLayer         |72                                                |     1|     1|     1|  0   x   x   x   x   x   x   x |  2       |       1        3      416      416 |       1       16      416      416 |  77529088 |
+    3|TIDL_PoolingLayer             |74                                                |     1|     1|     1|  3   x   x   x   x   x   x   x |  4       |       1       16      416      416 |       1       16      208      208 |   2768896 |
+    4|TIDL_ConvolutionLayer         |76                                                |     1|     1|     1|  4   x   x   x   x   x   x   x |  5       |       1       16      208      208 |       1       32      208      208 | 200744960 |
+    5|TIDL_PoolingLayer             |78                                                |     1|     1|     1|  6   x   x   x   x   x   x   x |  7       |       1       32      208      208 |       1       32      104      104 |   1384448 |
+    6|TIDL_ConvolutionLayer         |80                                                |     1|     1|     1|  7   x   x   x   x   x   x   x |  8       |       1       32      104      104 |       1       64      104      104 | 200052736 |
+    7|TIDL_PoolingLayer             |82                                                |     1|     1|     1|  9   x   x   x   x   x   x   x | 10       |       1       64      104      104 |       1       64       52       52 |    692224 |
+    8|TIDL_ConvolutionLayer         |84                                                |     1|     1|     1| 10   x   x   x   x   x   x   x | 11       |       1       64       52       52 |       1      128       52       52 | 199706624 |
+    9|TIDL_PoolingLayer             |86                                                |     1|     1|     1| 12   x   x   x   x   x   x   x | 13       |       1      128       52       52 |       1      128       26       26 |    346112 |
+   10|TIDL_ConvolutionLayer         |88                                                |     1|     1|     1| 13   x   x   x   x   x   x   x | 14       |       1      128       26       26 |       1      256       26       26 | 199533568 |
+   11|TIDL_PoolingLayer             |90                                                |     1|     1|     1| 15   x   x   x   x   x   x   x | 16       |       1      256       26       26 |       1      256       13       13 |    173056 |
+   12|TIDL_ConvolutionLayer         |92                                                |     1|     1|     1| 16   x   x   x   x   x   x   x | 17       |       1      256       13       13 |       1      512       13       13 | 199447040 |
+   13|TIDL_PoolingLayer             |95                                                |     1|     1|     1| 19   x   x   x   x   x   x   x | 20       |       1      512       13       13 |       1      512       12       12 |    294912 |
+   14|TIDL_ConvolutionLayer         |97                                                |     1|     1|     1| 20   x   x   x   x   x   x   x | 21       |       1      512       12       12 |       1     1024       12       12 | 679624704 |
+   15|TIDL_ConvolutionLayer         |100                                               |     1|     1|     1| 22   x   x   x   x   x   x   x | 23       |       1     1024       12       12 |       1      256       12       12 |  37785600 |
+   16|TIDL_ConvolutionLayer         |103                                               |     1|     1|     1| 24   x   x   x   x   x   x   x | 25       |       1      256       12       12 |       1      512       12       12 | 169943040 |
+   17|TIDL_ConvolutionLayer         |105                                               |     1|     1|     1| 26   x   x   x   x   x   x   x | 27       |       1      512       12       12 |       1      255       12       12 |  18800640 |
+   18|TIDL_FlattenLayer             |107                                               |     1|     1|     1| 27   x   x   x   x   x   x   x | 28       |       1      255       12       12 |       1        1        1    36720 |     36720 |
+   19|TIDL_TransposeLayer           |108                                               |     1|     1|     1| 28   x   x   x   x   x   x   x | 29       |       1        1        1    36720 |       1        1        1    36720 |     36720 |
+   20|TIDL_ReshapeLayer             |110                                               |     1|     1|     1| 29   x   x   x   x   x   x   x | 30       |       1        1        1    36720 |       1        1        1    36720 |     36720 |
+   21|TIDL_ReshapeLayer             |131                                               |     1|     1|     1| 30   x   x   x   x   x   x   x | 41       |       1        1        1    36720 |       1        1        1    36720 |     36720 |
+   22|TIDL_ConvolutionLayer         |133                                               |     1|     1|     1| 24   x   x   x   x   x   x   x | 42       |       1      256       12       12 |       1      128       12       12 |   4737024 |
+   23|TIDL_ConcatLayer              |153                                               |     1|     2|     1| 56  57   x   x   x   x   x   x | 58       |       1      128       12       12 |       1      256       12       12 |     36864 |
+   24|TIDL_ConcatLayer              |160                                               |     1|     2|     1|  1  63   x   x   x   x   x   x | 64       |       1        3      416      416 |       1      259      416      416 |  44821504 |
+   25|TIDL_ConcatLayer              |162                                               |     1|     2|     1| 65  15   x   x   x   x   x   x | 66       |       1      128       12       12 |       1      384       12       12 |     55296 |
+   26|TIDL_ConvolutionLayer         |164                                               |     1|     1|     1| 66   x   x   x   x   x   x   x | 67       |       1      384       12       12 |       1      256       12       12 | 127438848 |
+   27|TIDL_ConvolutionLayer         |166                                               |     1|     1|     1| 68   x   x   x   x   x   x   x | 69       |       1      256       12       12 |       1      255       12       12 |   9400320 |
+   28|TIDL_FlattenLayer             |168                                               |     1|     1|     1| 69   x   x   x   x   x   x   x | 70       |       1      255       12       12 |       1        1        1    36720 |     36720 |
+   29|TIDL_TransposeLayer           |169                                               |     1|     1|     1| 70   x   x   x   x   x   x   x | 71       |       1        1        1    36720 |       1        1        1    36720 |     36720 |
+   30|TIDL_ReshapeLayer             |171                                               |     1|     1|     1| 71   x   x   x   x   x   x   x | 72       |       1        1        1    36720 |       1        1        1    36720 |     36720 |
+   31|TIDL_ReshapeLayer             |192                                               |     1|     1|     1| 72   x   x   x   x   x   x   x | 83       |       1        1        1    36720 |       1        1        1    36720 |     36720 |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total Giga Macs : 2.1756
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Transpose Layer is not supported by TIDL and cannot be merged into any TIDL layer.
+Reshape Layer is not supported by TIDL and cannot be merged into any TIDL layer.
+Reshape Layer is not supported by TIDL and cannot be merged into any TIDL layer.
+Transpose Layer is not supported by TIDL and cannot be merged into any TIDL layer.
+Reshape Layer is not supported by TIDL and cannot be merged into any TIDL layer.
+Reshape Layer is not supported by TIDL and cannot be merged into any TIDL layer.
+
+Import error: This ONNX model has operators that are supported by TIDL only if they can be merged with TIDL layers. But these operators cannot be merged with any TIDL layer.
+Please check TIDL User's Guide for supported ONNX operators.
+
+TIDL import failed. Please check error messages. 
+
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v3_tiny_coco.txt
+
+=============================== TIDL import - parsing ===============================
+
+TFLite Model (Flatbuf) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/zldrobit_yolo_v3_tiny_quant.tflite  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_bin_zldrobit_yolo_v3_tiny_quant.bin  
+TIDL IO Info File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_param_zldrobit_yolo_v3_tiny_quant.bin  
+TFLite node size: 157
+Segmentation fault (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v2_tiny_coco.txt
+
+=============================== TIDL import - parsing ===============================
+
+TFLite Model (Flatbuf) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/quantized-yolo-v2-tiny-coco.tflite  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_bin_yolo-v2-tiny-coco-tflite.bin  
+TIDL IO Info File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_param_yolo-v2-tiny-coco-tflite.bin  
+TFLite node size: 39
+
+Only float and DT_INT32 tensor is suported 
+TIDL limitation: TFLite operator CONV_2D cannot be mapped to a TIDL layer.
+ TFlite operator MAXIMUM is not suported now..  By passing
+Segmentation fault (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v2_tiny_coco.txt
+
+=============================== TIDL import - parsing ===============================
+
+TFLite Model (Flatbuf) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/yolov3_quant_fix_reshape.tflite  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_bin_yolov3_quant_fix_reshape.bin  
+TIDL IO Info File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_param_yolov3_quant_fix_reshape.bin  
+TFLite node size: 157
+Segmentation fault (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v2_tiny_coco.txt
+
+=============================== TIDL import - parsing ===============================
+
+TFLite Model (Flatbuf) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/yolov3_quant_fix_reshape.tflite  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_bin_yolov3_quant_fix_reshape.bin  
+TIDL IO Info File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_param_yolov3_quant_fix_reshape.bin  
+TFLite node size: 157
+Segmentation fault (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v2_tiny_coco.txt
+
+=============================== TIDL import - parsing ===============================
+
+TFLite Model (Flatbuf) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/yolov3_quant_fix_reshape.tflite  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_bin_yolov3_quant_fix_reshape.bin  
+TIDL IO Info File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_param_yolov3_quant_fix_reshape.bin  
+TFLite node size: 157
+Segmentation fault (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v3_tiny_coco.txt
+
+=============================== TIDL import - parsing ===============================
+
+TFLite Model (Flatbuf) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/zldrobit_yolo_v3_tiny_quant.tflite  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_bin_zldrobit_yolo_v3_tiny_quant.bin  
+TIDL IO Info File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_param_zldrobit_yolo_v3_tiny_quant.bin  
+TFLite node size: 157
+Segmentation fault (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v3_tiny_coco.txt
+
+=============================== TIDL import - parsing ===============================
+
+TFLite Model (Flatbuf) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/zldrobit_yolo_v3_tiny_quant.tflite  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_bin_zldrobit_yolo_v3_tiny_quant.bin  
+TIDL IO Info File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_param_zldrobit_yolo_v3_tiny_quant.bin  
+TFLite node size: 157
+Segmentation fault (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v3_tiny_coco.txt
+
+=============================== TIDL import - parsing ===============================
+
+TFLite Model (Flatbuf) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/yolov3_quant_fix_reshape.tflite  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_bin_zldrobit_yolo_v3_tiny_quant.bin  
+TIDL IO Info File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/tidl_param_zldrobit_yolo_v3_tiny_quant.bin  
+TFLite node size: 157
+Segmentation fault (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tensorflow/popo_tidl_import_mobileNetv1.txt
+
+=============================== TIDL import - parsing ===============================
+
+TF Model (Proto) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/DW2TF-yolo-v2-tiny-coco.pb  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/DW2TF_tidl_bin_yolo-v2-tiny-coco.bin  
+TIDL Params File       : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/DW2TF_tidl_param_yolo-v2-tiny-coco.bin  
+
+TIDL limitation: TensorFlow operator RandomUniform is not suported.
+TIDL limitation: TensorFlow operator Sub is not suported.
+TIDL limitation: TensorFlow operator VariableV2 is not suported.
+[libprotobuf FATAL /oe/bld/build-CORTEX_1/arago-tmp-external-arm-toolchain/work/x86_64-nativesdk-arago-linux/nativesdk-tidl-import/01.01.03.00-r0/recipe-sysroot-native/usr/include/google/protobuf/repeated_field.h:1506] CHECK failed: (index) < (current_size_): 
+terminate called after throwing an instance of 'google::protobuf::FatalException'
+  what():  CHECK failed: (index) < (current_size_): 
+Aborted (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tensorflow/popo_tidl_import_mobileNetv1.txt
+
+=============================== TIDL import - parsing ===============================
+
+TF Model (Proto) File  : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/yolo-v2-tiny-coco.pb  
+TIDL Network File      : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/DW2TF_tidl_bin_yolo-v2-tiny-coco.bin  
+TIDL Params File       : linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/DW2TF_tidl_param_yolo-v2-tiny-coco.bin  
+
+TIDL limitation: TensorFlow operator Sub is not suported.
+TIDL limitation: TensorFlow operator RealDiv is not suported.
+TIDL limitation: TensorFlow operator Maximum is not suported.
+TIDL limitation: TensorFlow operator Sub is not suported.
+TIDL limitation: TensorFlow operator RealDiv is not suported.
+TIDL limitation: TensorFlow operator Maximum is not suported.
+TIDL limitation: TensorFlow operator Sub is not suported.
+TIDL limitation: TensorFlow operator RealDiv is not suported.
+TIDL limitation: TensorFlow operator Maximum is not suported.
+TIDL limitation: TensorFlow operator Sub is not suported.
+TIDL limitation: TensorFlow operator RealDiv is not suported.
+TIDL limitation: TensorFlow operator Maximum is not suported.
+TIDL limitation: TensorFlow operator Sub is not suported.
+TIDL limitation: TensorFlow operator RealDiv is not suported.
+TIDL limitation: TensorFlow operator Maximum is not suported.
+TIDL limitation: TensorFlow operator Sub is not suported.
+TIDL limitation: TensorFlow operator RealDiv is not suported.
+TIDL limitation: TensorFlow operator Maximum is not suported.
+TIDL limitation: TensorFlow operator Sub is not suported.
+TIDL limitation: TensorFlow operator RealDiv is not suported.
+TIDL limitation: TensorFlow operator Maximum is not suported.
+TIDL limitation: TensorFlow operator Sub is not suported.
+TIDL limitation: TensorFlow operator RealDiv is not suported.
+TIDL limitation: TensorFlow operator Maximum is not suported.
+TIDL limitation: TensorFlow operator Identity is not suported.
+TIDL limitation: TensorFlow operator NoOp is not suported.
+[libprotobuf FATAL /oe/bld/build-CORTEX_1/arago-tmp-external-arm-toolchain/work/x86_64-nativesdk-arago-linux/nativesdk-tidl-import/01.01.03.00-r0/recipe-sysroot-native/usr/include/google/protobuf/repeated_field.h:1506] CHECK failed: (index) < (current_size_): 
+terminate called after throwing an instance of 'google::protobuf::FatalException'
+  what():  CHECK failed: (index) < (current_size_): 
+Aborted (core dumped)
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> 
+

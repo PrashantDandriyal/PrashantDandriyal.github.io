@@ -1,0 +1,40 @@
+export PSDK_LINUX="/home/pradan/ti-processor-sdk-linux-am57xx-evm-06.02.00.81"
+
+export TARGET_ROOTDIR="/home/pradan/ti-processor-sdk-linux-am57xx-evm-06.02.00.81/linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi"
+
+export HOSR_ROOTDIR="/home/pradan/ti-processor-sdk-linux-am57xx-evm-06.02.00.81/linux-devkit/sysroots/x86_64-arago-linux"
+
+make build-api
+
+make build-examples
+
+_____________________
+
+# Models are at "/ti-processor-sdk-linux-am57xx-evm-06.02.00.81/linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models$ 
+"
+
+* Copy config file content from here: "ti-processor-sdk-linux-am57xx-evm-06.02.00.81/linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tensorflow/tidl_import_mobileNetv2_jpg.txt" 
+and save the copy in same location as as "linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tensorflow/popo_tidl_import_mobileNetv1.txt"  and edit it as showin in this txt file.
+
+* Convert frozen model (.pb) to an optimized form (.pb). Folowing the link http://software-dl.ti.com/processor-sdk-linux/esd/docs/05_03_00_07/linux/Foundational_Components_TIDL.html#importing-tensorflow-models and the corresponding gist is : https://gist.github.com/PrashantDandriyal/19b6425f6beabc15886a7f8c4a9e1a0c
+
+## For TF Models
+Download the final optimized model and save it in the same directory as the frozen model 
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tensorflow/popo_tidl_import_mobileNetv1.txt
+
+## For TFLite
+* Convert the model from TF -> TFLite
+* Create new config file as
+* Run
+[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/tflite/popo_tidl_import_yolo_v2_tiny_coco.txt
+
+## For ONNX
+*
+*
+*[linux-devkit]:~/ti-processor-sdk-linux-am57xx-evm-06.02.00.81> ./linux-devkit/sysroots/x86_64-arago-linux/usr/bin/tidl_model_import.out ./linux-devkit/sysroots/x86_64-arago-linux/usr/share/ti/tidl/utils/test/testvecs/config/import/onnx/popo_tidl_import_yolov3tiny.txt
+
+
+!flatc -t --strict-json --defaults-json -o weights schema.fbs  -- /ti-processor-sdk-linux-am57xx-evm-06.02.00.81/linux-devkit/sysroots/armv7at2hf-neon-linux-gnueabi/usr/share/arm/armnn/models/zldrobit_yolo_v3_tiny_quant.tflite
+
+
+

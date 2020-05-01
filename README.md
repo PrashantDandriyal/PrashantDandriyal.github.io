@@ -73,6 +73,6 @@ $ make build-examples
 
 If you faced any problem in the `make` part, refer to this [e2e thread](https://e2e.ti.com/support/processors/f/791/t/892281).
 
-* If not, then we're done!
+* If not, then we're done! The _almost_ complete console logs can be seen in the [file](console.txt)
  
 
